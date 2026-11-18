@@ -1,0 +1,14 @@
+{
+  "name": "jax-whatsapp-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sends JAX Studio Desk follow-ups through the WhatsApp Business Cloud API.",
+  "main": "whatsapp-server.js",
+  "scripts": {
+    "start": "node whatsapp-server.js",
+    "dry-run": "node -e \"process.env.DRY_RUN='1';require('./whatsapp-server.js')\""
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JAX Fitness Studio</title>
+<meta name="description" content="JAX Fitness Studio. Coached strength and conditioning. Your first session is free.">
+<link rel="icon" href="assets/jax-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/site.css">
+<script>try{if(sessionStorage.getItem('jax-intro')==='1')document.documentElement.classList.add('jx-seen')}catch(e){}</script>
+</head>
+<body>
+<div class="jx-root" id="jx-root" style="position: relative; overflow: hidden; background: #000; color: #fff; font-family: Archivo, Arial, sans-serif; font-size: 17px; line-height: 1.55">
+
+<!-- ================= HERO ================= -->
+<header id="top" style="position: relative; min-height: clamp(660px, 100vh, 920px); display: flex; flex-direction: column; overflow: hidden">
+
+  <nav aria-label="Main" style="position: relative; z-index: 5; display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 18px clamp(20px, 5vw, 80px)">
+    <a href="#top" aria-label="JAX Fitness Studio, back to top" style="display: flex; align-items: center; min-height: 48px">
+      <img src="assets/jax-logo.png" alt="JAX Fitness Studio" style="height: 52px; width: auto; display: block">
+    </a>
+    <div class="jx-links">
+      <a href="#programs" data-go="programs">Programs</a>
+      <a href="#trainers" data-go="trainers">Trainers</a>
+      <a href="#membership" data-go="membership">Membership</a>
+      <a href="#schedule" data-go="schedule">Schedule</a>
+      <a href="#contact" data-go="contact">Contact</a>
+    </div>
+    <button class="jx-burger" id="js-burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="js-menu">
+      <svg viewBox="0 0 106 100" aria-hidden="true">
+        <path class="br" d="M70 0H98L70 50L98 100H70L42 50Z" fill="#8a8a8a"></path>
+        <path class="bl" d="M8 0H38L68 50L38 100H8L38 50Z" fill="#fff"></path>
+      </svg>
+    </button>
+  </nav>
+
+    <div class="jx-menu" id="js-menu" hidden style="position: relative; z-index: 5; display: flex; flex-direction: column; padding: 0 clamp(20px, 5vw, 80px) 24px; background: #000">
+      <a href="#programs" data-go="programs">Programs <svg viewBox="0 0 60 100" aria-hidden="true"><path d="M0 0H30L60 50L30 100H0L30 50Z"></path></svg></a>
+      <a href="#trainers" data-go="trainers">Trainers <svg viewBox="0 0 60 100" aria-hidden="true"><path d="M0 0H30L60 50L30 100H0L30 50Z"></path></svg></a>
+      <a href="#membership" data-go="membership">Membership <svg viewBox="0 0 60 100" aria-hidden="true"><path d="M0 0H30L60 50L30 100H0L30 50Z"></path></svg></a>
+      <a href="#schedule" data-go="schedule">Schedule <svg viewBox="0 0 60 100" aria-hidden="true"><path d="M0 0H30L60 50L30 100H0L30 50Z"></path></svg></a>
+      <a href="#contact" data-go="contact">Contact <svg viewBox="0 0 60 100" aria-hidden="true"><path d="M0 0H30L60 50L30 100H0L30 50Z"></path></svg></a>
+    </div>
+
+  <div style="position: relative; z-index: 2; flex: 1; display: flex; flex-wrap: wrap; align-items: center; gap: clamp(24px, 4vw, 64px); padding: 24px clamp(20px, 5vw, 80px) 40px; max-width: 1480px; width: 100%; margin: 0 auto">
+    <div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 28px">
+      <div class="jx-label jx-up">Fitness Studio &nbsp;/&nbsp; [YOUR CITY]</div>
+      <h1 class="jx-up d1" style="margin: 0; font: 400 clamp(64px, 11.5vw, 176px)/.86 Anton, Impact, 'Arial Narrow', sans-serif; text-transform: uppercase; color: #fff">Train hard.<br>Leave<br>different.</h1>
+      <p class="jx-up d2" style="margin: 0; max-width: 30em; color: #d0d0d0; font-size: 18px">Coached strength and conditioning in a studio built for people who show up. Your first session is on us.</p>
+      <div class="jx-up d3" style="display: flex; flex-wrap: wrap; align-items: center; gap: 22px">
+        <a class="jx-btn red" href="#contact" data-go="contact">Book a free trial <svg viewBox="0 0 60 100" aria-hidden="true"><path d="M0 0H30L60 50L30 100H0L30 50Z"></path></svg></a>
+        <a class="jx-book jx-scroll" href="#manifesto">Scroll <svg viewBox="0 0 60 100" aria-hidden="true"><path d="M0 0H30L60 50L30 100H0L30 50Z"></path></svg></a>
+      </div>
+    </div>
+    <div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; align-items: center; gap: 14px">
+      <div class="jx-hx" role="img" aria-label="Athlete doing pull-ups, seen through the JAX X">
+        <div class="half r"></div>
+        <div class="half l"></div>
+        <svg viewBox="0 0 106 100" preserveAspectRatio="none" aria-hidden="true"><path d="M8 0H38L68 50L38 100H8" fill="none" stroke="#B3261E" stroke-width="2" vector-effect="non-scaling-stroke" style="stroke: var(--jx-red)"></path></svg>
+      </div>
+    </div>
+  </div>
+
+    <div class="jx-intro" id="js-intro" aria-hidden="true">
+      <div class="jx-door dl"></div>
+      <div class="jx-door dr"></div>
+      <div class="jx-flash"></div>
+      <div class="jx-stage">
+        <img class="jx-lt" src="assets/jax-logo.png" alt="">
+        <img class="jx-lb" src="assets/jax-logo.png" alt="">
+        <div class="jx-ix">
+          <svg class="ol" viewBox="0 0 106 100" aria-hidden="true">
+            <path pathLength="1" d="M8 0H38L68 50L38 100H8L38 50Z"></path>
+            <path pathLength="1" d="M70 0H98L70 50L98 100H70L42 50Z"></path>
+          </svg>
+          <div class="jx-hw wr"><div class="jx-hh hr"><svg viewBox="0 0 106 100" aria-hidden="true"><path d="M70 0H98L70 50L98 100H70L42 50Z" fill="#5a5a5a"></path></svg></div></div>
+          <div class="jx-hw wl"><div class="jx-hh hl"><svg viewBox="0 0 106 100" aria-hidden="true"><path d="M8 0H38L68 50L38 100H8L38 50Z" fill="#fff" stroke="#B3261E" stroke-width="1.2"></path></svg></div></div>
+        </div>
+      </div>
+      <button class="jx-skip" id="js-skip" type="button">Skip intro</button>
+    </div>
+</header>
+
+<!-- ================= MANIFESTO ================= -->
+<section id="manifesto" class="jx-sec jx-cut" style="background: #0a0a0a; overflow: hidden">
+  <div class="jx-bgx" aria-hidden="true"><svg viewBox="0 0 106 100"><path d="M70 0H98L70 50L98 100H70L42 50Z" fill="#5a5a5a"></path><path d="M8 0H38L68 50L38 100H8L38 50Z" fill="#fff"></path></svg></div>
+  <div class="jx-wrap" style="display: flex; flex-direction: column; gap: 36px">
+    <div class="jx-label">The rules</div>
+    <div style="display: flex; flex-direction: column; gap: 6px">
+      <p class="jx-h2 jx-rv">No mirrors for show.</p>
+      <p class="jx-h2 jx-rv" style="color: #8a8a8a">No guesswork.</p>
+      <p class="jx-h2 jx-rv">Coaches who watch<br>every rep.</p>
+      <p class="jx-h2 jx-rv"><span style="-webkit-text-stroke: 2px var(--jx-red); color: transparent">Work that shows.</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROGRAMS ================= -->
+<section id="programs" class="jx-sec jx-cut" style="background: #000">
+  <div class="jx-wrap" style="display: flex; flex-direction: column; gap: 44px">
+    <div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 24px">
+      <div style="display: flex; flex-direction: column; gap: 18px">
+        <div class="jx-label">Programs</div>
+        <h2 class="jx-h2 jx-rv">Pick your fight.</h2>
+      </div>
+      <div style="display: flex; gap: 12px">
+        <button class="jx-arrow prev" type="button" aria-label="Previous programs" id="js-prev"><svg viewBox="0 0 60 100" aria-hidden="true"><path d="M0 0H30L60 50L30 100H0L30 50Z"></path></svg></button>
+        <button class="jx-arrow" type="button" aria-label="Next programs" id="js-next"><svg viewBox="0 0 60 100" aria-hidden="true"><path d="M0 0H30L60 50L30 100H0L30 50Z"></path></svg></button>
+      </div>
+    </div>
+    <div class="jx-rail" id="js-rail">
+      <a class="jx-card" href="#schedule" style="text-decoration: none; color: #fff">
+        <div class="v p1"></div>
+        <div class="jx-label n">01</div>
+        <h3 class="t" style="margin: 0 0 10px; font: 400 54px/.92 Anton, Impact, sans-serif; text-transform: uppercase">Strength</h3>
+        <p class="b" style="margin: 0; color: #d0d0d0; font-size: 15px; max-width: 22em">Barbell basics done right. Squat, press, pull, with a coach on your form.</p>
+      </a>
+      <a class="jx-card" href="#schedule" style="text-decoration: none; color: #fff">
+        <div class="v p2"></div>
+        <div class="jx-label n">02</div>
+        <h3 class="t" style="margin: 0 0 10px; font: 400 54px/.92 Anton, Impact, sans-serif; text-transform: uppercase">HIIT</h3>
+        <p class="b" style="margin: 0; color: #d0d0d0; font-size: 15px; max-width: 22em">Short rounds, full effort. You finish empty and walk out sharper.</p>
+      </a>
+      <a class="jx-card" href="#schedule" style="text-decoration: none; color: #fff">
+        <div class="v p3"></div>
+        <div class="jx-label n">03</div>
+        <h3 class="t" style="margin: 0 0 10px; font: 400 54px/.92 Anton, Impact, sans-serif; text-transform: uppercase">Personal<br>training</h3>
+        <p class="b" style="margin: 0; color: #d0d0d0; font-size: 15px; max-width: 22em">One coach, one plan, built around your body and your week.</p>
+      </a>
+      <a class="jx-card" href="#schedule" style="text-decoration: none; color: #fff">
+        <div class="v tx"></div>
+        <div class="jx-label n">04</div>
+        <div class="jx-label tag">[Program photo]</div>
+        <h3 class="t" style="margin: 0 0 10px; font: 400 54px/.92 Anton, Impact, sans-serif; text-transform: uppercase">Mobility</h3>
+        <p class="b" style="margin: 0; color: #d0d0d0; font-size: 15px; max-width: 22em">Move well first. Joints, range and recovery so the heavy days stay heavy.</p>
+      </a>
+      <a class="jx-card" href="#contact" style="text-decoration: none; color: #fff">
+        <div class="v tx"></div>
+        <div class="jx-label n">05</div>
+        <div class="jx-label tag">[Program photo]</div>
+        <h3 class="t" style="margin: 0 0 10px; font: 400 54px/.92 Anton, Impact, sans-serif; text-transform: uppercase">[Your<br>program]</h3>
+        <p class="b" style="margin: 0; color: #d0d0d0; font-size: 15px; max-width: 22em">[One line on who it is for and what they get.]</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TRAINERS ================= -->
+<section id="trainers" class="jx-sec jx-cut" style="background: #0a0a0a">
+  <div class="jx-wrap" style="display: flex; flex-direction: column; gap: 44px">
+    <div style="display: flex; flex-direction: column; gap: 18px">
+      <div class="jx-label">Trainers</div>
+      <h2 class="jx-h2 jx-rv">The people<br>holding the bar.</h2>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(230px, 100%), 1fr)); gap: 28px 12px">
+      <div class="jx-tr" style="display: flex; flex-direction: column; gap: 16px">
+        <div class="jx-ph jx-slant" style="aspect-ratio: 3/4; padding-left: 22%">[Portrait]</div>
+        <div><div style="font: 400 30px/1 Anton, Impact, sans-serif; text-transform: uppercase">[Trainer name]</div><div class="jx-label sp" style="margin-top: 8px">[Specialty]</div></div>
+      </div>
+      <div class="jx-tr" style="display: flex; flex-direction: column; gap: 16px; margin-top: clamp(0px, 3vw, 44px)">
+        <div class="jx-ph jx-slant" style="aspect-ratio: 3/4; padding-left: 22%">[Portrait]</div>
+        <div><div style="font: 400 30px/1 Anton, Impact, sans-serif; text-transform: uppercase">[Trainer name]</div><div class="jx-label sp" style="margin-top: 8px">[Specialty]</div></div>
+      </div>
+      <div class="jx-tr" style="display: flex; flex-direction: column; gap: 16px">
+        <div class="jx-ph jx-slant" style="aspect-ratio: 3/4; padding-left: 22%">[Portrait]</div>
+        <div><div style="font: 400 30px/1 Anton, Impact, sans-serif; text-transform: uppercase">[Trainer name]</div><div class="jx-label sp" style="margin-top: 8px">[Specialty]</div></div>
+      </div>
+      <div class="jx-tr" style="display: flex; flex-direction: column; gap: 16px; margin-top: clamp(0px, 3vw, 44px)">
+        <div class="jx-ph jx-slant" style="aspect-ratio: 3/4; padding-left: 22%">[Portrait]</div>
+        <div><div style="font: 400 30px/1 Anton, Impact, sans-serif; text-transform: uppercase">[Trainer name]</div><div class="jx-label sp" style="margin-top: 8px">[Specialty]</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STUDIO ================= -->
+<section id="studio" class="jx-sec jx-cut" style="background: #000">
+  <div class="jx-wrap" style="display: flex; flex-direction: column; gap: 44px">
+    <div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 24px">
+      <div style="display: flex; flex-direction: column; gap: 18px">
+        <div class="jx-label">The studio</div>
+        <h2 class="jx-h2 jx-rv">Built for work.</h2>
+      </div>
+      <p style="margin: 0; max-width: 24em; color: #d0d0d0">[Two lines about the space: floor area, equipment, what makes it yours.]</p>
+    </div>
+    <div style="display: flex; flex-wrap: wrap; gap: 12px">
+      <div class="jx-sp jx-s1" role="img" aria-label="Athlete holding weight plates beside the barbell rack" style="flex: 3 1 420px; height: 440px; clip-path: polygon(0 0, 100% 0, 88% 100%, 0 100%)"></div>
+      <div style="flex: 2 1 280px; display: flex; flex-direction: column; gap: 12px; margin-left: clamp(-56px, -3vw, 0px)">
+        <div class="jx-sp jx-s2" role="img" aria-label="Runner on the treadmill line" style="height: 214px; clip-path: polygon(12% 0, 100% 0, 100% 100%, 0 100%)"></div>
+        <div class="jx-sp jx-s3" role="img" aria-label="Dumbbell curl by the dumbbell rack" style="height: 214px; clip-path: polygon(12% 0, 100% 0, 100% 100%, 0 100%); margin-left: -6%"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RESULTS ================= -->
+<section id="results" class="jx-sec jx-cut" style="background: #0a0a0a">
+  <div class="jx-wrap" style="display: flex; flex-direction: column; gap: 44px">
+    <div style="display: flex; flex-direction: column; gap: 18px">
+      <div class="jx-label">Results</div>
+      <h2 class="jx-h2 jx-rv">Proof, not promises.</h2>
+    </div>
+    <div style="display: flex; flex-wrap: wrap; gap: clamp(24px, 4vw, 56px); align-items: stretch">
+      <div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+        <div style="display: flex; gap: 6px">
+          <div class="jx-ph" style="flex: 1; height: 340px; clip-path: polygon(0 0, 100% 0, 86% 100%, 0 100%)">[Before]</div>
+          <div class="jx-ph" style="flex: 1; height: 340px; clip-path: polygon(14% 0, 100% 0, 100% 100%, 0 100%); margin-left: -7%; justify-content: flex-end">[After]</div>
+        </div>
+        <div style="font-size: 15px; color: #d0d0d0">[Member name], [what changed] in [time frame]. Shared with permission.</div>
+      </div>
+      <div style="flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; justify-content: space-between; gap: 20px">
+        <div style="border-top: 1px solid #5a5a5a; padding-top: 16px; display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap">
+          <div style="font: 400 clamp(48px, 6vw, 84px)/.9 Anton, Impact, sans-serif">[000]</div><div class="jx-label">Members trained</div>
+        </div>
+        <div style="border-top: 1px solid #5a5a5a; padding-top: 16px; display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap">
+          <div style="font: 400 clamp(48px, 6vw, 84px)/.9 Anton, Impact, sans-serif">[00]</div><div class="jx-label">Coached sessions a week</div>
+        </div>
+        <div style="border-top: 1px solid #5a5a5a; padding-top: 16px; display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap">
+          <div style="font: 400 clamp(48px, 6vw, 84px)/.9 Anton, Impact, sans-serif">[00]</div><div class="jx-label">Years on the floor</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MEMBERSHIP ================= -->
+<section id="membership" class="jx-sec jx-cut" style="background: #000">
+  <div class="jx-wrap" style="display: flex; flex-direction: column; gap: 44px">
+    <div style="display: flex; flex-direction: column; gap: 18px">
+      <div class="jx-label">Membership</div>
+      <h2 class="jx-h2 jx-rv">Three ways in.</h2>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 16px; align-items: stretch">
+      <div class="jx-tier" style="border: 1px solid #2a2a2a; padding: 32px; display: flex; flex-direction: column; gap: 22px">
+        <div class="jx-label">Open floor</div>
+        <div style="font: 400 60px/.9 Anton, Impact, sans-serif">[YOUR PRICE]<span style="font: 500 14px Archivo, Arial, sans-serif; color: #a3a3a3; letter-spacing: .1em"> / month</span></div>
+        <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; color: #d0d0d0; font-size: 15px">
+          <li>Full gym access</li><li>[Opening hours access]</li><li>[What else is included]</li>
+        </ul>
+        <a class="jx-btn" href="#contact" style="margin-top: auto; justify-content: space-between">Start here <svg viewBox="0 0 60 100" aria-hidden="true"><path d="M0 0H30L60 50L30 100H0L30 50Z"></path></svg></a>
+      </div>
+      <div class="jx-tier" style="border: 2px solid var(--jx-red); padding: 32px; display: flex; flex-direction: column; gap: 22px; background: #0a0a0a">
+        <div style="display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap"><div class="jx-label" style="color: #fff">Classes</div><div class="jx-label">Most members pick this</div></div>
+        <div style="font: 400 60px/.9 Anton, Impact, sans-serif">[YOUR PRICE]<span style="font: 500 14px Archivo, Arial, sans-serif; color: #a3a3a3; letter-spacing: .1em"> / month</span></div>
+        <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; color: #d0d0d0; font-size: 15px">
+          <li>Everything in Open floor</li><li>[Number of] coached classes a week</li><li>[What else is included]</li>
+        </ul>
+        <a class="jx-btn red" href="#contact" style="margin-top: auto; justify-content: space-between">Book a free trial <svg viewBox="0 0 60 100" aria-hidden="true"><path d="M0 0H30L60 50L30 100H0L30 50Z"></path></svg></a>
+      </div>
+      <div class="jx-tier" style="border: 1px solid #2a2a2a; padding: 32px; display: flex; flex-direction: column; gap: 22px">
+        <div class="jx-label">Personal training</div>
+        <div style="font: 400 60px/.9 Anton, Impact, sans-serif">[YOUR PRICE]<span style="font: 500 14px Archivo, Arial, sans-serif; color: #a3a3a3; letter-spacing: .1em"> / month</span></div>
+        <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; color: #d0d0d0; font-size: 15px">
+          <li>Your own coach and plan</li><li>[Number of] one-to-one sessions</li><li>[What else is included]</li>
+        </ul>
+        <a class="jx-btn" href="#contact" style="margin-top: auto; justify-content: space-between">Talk to a coach <svg viewBox="0 0 60 100" aria-hidden="true"><path d="M0 0H30L60 50L30 100H0L30 50Z"></path></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SCHEDULE ================= -->
+<section id="schedule" class="jx-sec jx-cut" style="background: #0a0a0a">
+  <div class="jx-wrap" style="display: flex; flex-direction: column; gap: 36px">
+    <div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 24px">
+      <div style="display: flex; flex-direction: column; gap: 18px">
+        <div class="jx-label">Schedule</div>
+        <h2 class="jx-h2 jx-rv">This week.</h2>
+      </div>
+      <div class="jx-label">Sample timetable. Replace with your classes.</div>
+    </div>
+    <div role="group" id="js-filters" aria-label="Filter classes" style="display: flex; flex-wrap: wrap; gap: 10px">
+    </div>
+    <div style="overflow-x: auto">
+      <div id="js-rows" style="min-width: 560px; display: flex; flex-direction: column; border-top: 1px solid #5a5a5a">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="jx-sec jx-cut" style="background: #000">
+  <div class="jx-wrap" style="display: flex; flex-direction: column; gap: 44px">
+    <div style="display: flex; flex-direction: column; gap: 18px">
+      <div class="jx-label">Contact</div>
+      <h2 class="jx-h2 jx-rv">First session<br>is free.</h2>
+    </div>
+    <form id="trial-form" class="jx-form" novalidate>
+      <div class="jx-fgrid">
+        <div class="jx-field"><label class="jx-label" for="tf-name">Name</label><input id="tf-name" name="name" autocomplete="name" required></div>
+        <div class="jx-field"><label class="jx-label" for="tf-phone">WhatsApp number</label><input id="tf-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="98765 43210" required></div>
+        <div class="jx-field"><label class="jx-label" for="tf-program">Program</label><select id="tf-program" name="program"><option>Strength</option><option>HIIT</option><option>Personal training</option><option>Mobility</option><option>Not sure yet</option></select></div>
+        <div class="jx-field"><label class="jx-label" for="tf-date">Preferred day</label><input id="tf-date" name="date" type="date"></div>
+      </div>
+      <p id="tf-error" class="jx-ferr" role="alert" hidden></p>
+      <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 18px">
+        <button class="jx-btn red" type="submit">Book my free trial <svg viewBox="0 0 60 100" aria-hidden="true"><path d="M0 0H30L60 50L30 100H0L30 50Z"></path></svg></button>
+        <span class="jx-label">We reply on WhatsApp</span>
+      </div>
+      <div id="tf-done" class="jx-fdone" role="status" hidden>
+        <div style="font: 400 44px/.95 Anton, Impact, sans-serif; text-transform: uppercase">You're in.</div>
+        <p style="margin: 0; color: #d0d0d0">We'll message you on WhatsApp to lock in a time.</p>
+        <a class="jx-book" id="tf-wa" href="https://wa.me/" target="_blank" rel="noopener" hidden>Message us now <svg viewBox="0 0 60 100" aria-hidden="true"><path d="M0 0H30L60 50L30 100H0L30 50Z"></path></svg></a>
+      </div>
+    </form>
+    <div style="display: flex; flex-wrap: wrap; gap: clamp(24px, 4vw, 56px)">
+      <div style="flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 26px">
+        <div style="display: flex; flex-wrap: wrap; gap: 12px">
+          <a class="jx-btn red" id="js-wa" href="https://wa.me/" target="_blank" rel="noopener">WhatsApp us <svg viewBox="0 0 60 100" aria-hidden="true"><path d="M0 0H30L60 50L30 100H0L30 50Z"></path></svg></a>
+          <a class="jx-btn" id="js-tel" href="tel:">Call the studio <svg viewBox="0 0 60 100" aria-hidden="true"><path d="M0 0H30L60 50L30 100H0L30 50Z"></path></svg></a>
+        </div>
+        <div style="display: grid; grid-template-columns: 110px minmax(0, 1fr); gap: 14px 16px; border-top: 1px solid #5a5a5a; padding-top: 22px">
+          <div class="jx-label">Phone</div><div>[YOUR PHONE NUMBER]</div>
+          <div class="jx-label">Address</div><div>[YOUR STREET ADDRESS, CITY, PIN]</div>
+          <div class="jx-label">Hours</div><div>[WEEKDAY HOURS]<br>[WEEKEND HOURS]</div>
+          <div class="jx-label">Instagram</div><div>[@YOURHANDLE]</div>
+        </div>
+      </div>
+      <div class="jx-ph" style="flex: 1 1 340px; min-height: 340px; clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%)"><span style="padding-left: 10%">[Map: embed your Google Maps location]</span></div>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 14px">
+      <div class="jx-label">From Instagram</div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 8px">
+        <div class="jx-ph" style="aspect-ratio: 1/1">[Post]</div>
+        <div class="jx-ph" style="aspect-ratio: 1/1">[Post]</div>
+        <div class="jx-ph" style="aspect-ratio: 1/1">[Post]</div>
+        <div class="jx-ph" style="aspect-ratio: 1/1">[Post]</div>
+        <div class="jx-ph" style="aspect-ratio: 1/1">[Post]</div>
+        <div class="jx-ph" style="aspect-ratio: 1/1">[Post]</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer style="position: relative; overflow: hidden; background: #000; border-top: 1px solid #2a2a2a; padding: clamp(48px, 6vw, 80px) clamp(20px, 5vw, 80px); min-height: 440px; display: flex; flex-direction: column; justify-content: space-between; gap: 48px">
+  <div aria-hidden="true" style="position: absolute; right: -14%; bottom: -46%; width: min(92vw, 980px); aspect-ratio: 1/1; pointer-events: none">
+    <svg viewBox="0 0 106 100" style="width: 100%; height: 100%"><path d="M70 0H98L70 50L98 100H70L42 50Z" fill="#5a5a5a"></path><path d="M8 0H38L68 50L38 100H8L38 50Z" fill="#fff" stroke="#B3261E" stroke-width=".6"></path></svg>
+  </div>
+  <div style="position: relative; display: flex; flex-direction: column; align-items: flex-start; gap: 24px; max-width: 520px">
+    <img src="assets/jax-logo.png" alt="JAX Fitness Studio" style="height: 84px; width: auto; display: block; margin-left: -12px">
+    <a class="jx-btn red" href="#contact">Book a free trial <svg viewBox="0 0 60 100" aria-hidden="true"><path d="M0 0H30L60 50L30 100H0L30 50Z"></path></svg></a>
+  </div>
+  <div style="position: relative; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 28px">
+    <div class="jx-label" style="color: #d0d0d0; background: #000; padding: 6px 0">© 2026 JAX Fitness Studio</div>
+    <a class="jx-skip" href="admin/" style="position: static; color: #d0d0d0; background: #000; display: inline-flex; align-items: center; text-decoration: none">Staff login</a>
+    <button class="jx-skip" type="button" id="js-replay" style="position: static; color: #d0d0d0; background: #000">Replay intro</button>
+  </div>
+</footer>
+
+<div class="jx-wipe" id="js-wipe" aria-hidden="true"><div class="wl"></div><div class="wr"></div></div>
+<div class="jx-cur" id="js-cur" aria-hidden="true">
+  <svg viewBox="0 0 106 100"><path class="cr" d="M70 0H98L70 50L98 100H70L42 50Z" fill="#fff"></path><path class="cl" d="M8 0H38L68 50L38 100H8L38 50Z" fill="#fff"></path></svg>
+</div>
+
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/store.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>

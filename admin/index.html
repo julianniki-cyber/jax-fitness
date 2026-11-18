@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>JAX Studio Desk</title>
+<link rel="icon" href="../assets/jax-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+<div class="app">
+  <aside class="side">
+    <a class="brand" href="#dashboard" aria-label="JAX Studio Desk, dashboard">
+      <img src="../assets/jax-logo.png" alt="">
+      <span>Studio desk</span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Dashboard sections">
+      <a href="#dashboard" data-page="dashboard">Dashboard</a>
+      <a href="#followups" data-page="followups">WhatsApp follow-ups <span class="count" id="fu-count"></span></a>
+      <a href="#leads" data-page="leads">Leads &amp; trials</a>
+      <a href="#members" data-page="members">Members</a>
+      <a href="#payments" data-page="payments">Payments</a>
+      <a href="#attendance" data-page="attendance">Attendance</a>
+      <a href="#settings" data-page="settings">Settings</a>
+    </nav>
+    <a class="side-foot" href="../">View website</a>
+  </aside>
+  <main class="main" id="main" tabindex="-1"></main>
+</div>
+
+<dialog class="modal" id="modal" aria-labelledby="modal-title">
+  <div id="modal-body"></div>
+</dialog>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<input type="file" id="import-file" accept="application/json,.json" hidden>
+
+<script src="../js/config.js"></script>
+<script src="../js/store.js"></script>
+<script src="../js/whatsapp.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>

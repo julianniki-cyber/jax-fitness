@@ -1,0 +1,8 @@
+{
+  "lead_welcome": { "name": "jax_lead_welcome", "language": "en", "params": ["name", "studio"] },
+  "trial_followup": { "name": "jax_trial_followup", "language": "en", "params": ["name", "studio"] },
+  "renewal": { "name": "jax_renewal_reminder", "language": "en", "params": ["name", "plan", "studio", "expiry"] },
+  "expired": { "name": "jax_membership_expired", "language": "en", "params": ["name", "studio", "expiry"] },
+  "payment_due": { "name": "jax_payment_due", "language": "en", "params": ["name", "studio", "due"] },
+  "inactive": { "name": "jax_we_miss_you", "language": "en", "params": ["name", "studio", "days"] }
+}
